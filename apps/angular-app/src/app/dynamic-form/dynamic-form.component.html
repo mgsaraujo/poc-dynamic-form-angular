@@ -1,0 +1,12 @@
+<div class="add-lessons-form" [formGroup]="fg">
+    <div formArrayName="todo">
+        <div *ngFor="let skill of formArray.controls; let i=index">
+
+            <div [formGroupName]="i">
+                Tarefa a fazer (todo):
+                <input type="text" formControlName="todo">
+
+            </div>
+        </div>
+    </div>
+</div>

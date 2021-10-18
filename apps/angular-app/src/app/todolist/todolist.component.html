@@ -1,0 +1,7 @@
+<app-workspace-dynamic-form [fg]="myForm" [formArray]="TodoControls"></app-workspace-dynamic-form>
+
+
+<button type="button" (click)="addTodo()">Add</button>
+<div *ngFor="let item of todoList">
+    <app-workspace-todo-item [todoItem]="item"></app-workspace-todo-item>
+</div>
